@@ -20,10 +20,10 @@ class MemberServiceTest {
         memoryMemberRepository=new MemoryMemberRepository();
         memberService = new MemberService(memoryMemberRepository); //DI
     }
-    @AfterEach
+/*    @AfterEach
     public void afterEach(){
         memoryMemberRepository.clearStore();
-    }
+    }*/
     @Test
     void 회원가입() {
         //given 준비

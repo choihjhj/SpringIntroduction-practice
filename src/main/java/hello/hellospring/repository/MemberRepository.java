@@ -10,5 +10,5 @@ public interface MemberRepository {
     Optional<Member> findById(Long id); //id에 해당하는맴버찾기
     Optional<Member> findByName(String name); //name에 해당하는 맴버찾기
     List<Member> findAll(); //전체맴버조회
-    void clearStore();
+    //void clearStore();
 }
