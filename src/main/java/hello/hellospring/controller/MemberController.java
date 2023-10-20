@@ -17,6 +17,7 @@ public class MemberController {
     public MemberController(MemberService memberService) {
 
         this.memberService = memberService;
+        System.out.println("memberService = "+memberService.getClass()); //프록시 확인 aop
     }
     @GetMapping("/members/new")
     public String createForm(){
